@@ -9,11 +9,47 @@
 			margin: 0;
 			padding: 0;
 			overflow: hidden;
+      background-color: #333;
+      text-align: center;
 		}
+    h1 {
+      font-family: arial;
+      color:#7CFC00;
+      font-weight: normal;
+      font-size: 3em;
+      margin: 20px;
+    }
+    #container {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      padding:0px;
+    }
+    .monster {
+      height: 350px;
+      width: 16.6%;
+      margin: 0px;
+      background-color:#7CFC00;
+      float: left;
+      box-shadow: 0 0 0 4px  #333;
+      font-family:arial;
+      font-size: 1.2em;
+      text-align: center;
+      overflow:hidden;
+      padding-top: 20px;
+    }
 	</style>
 
 </head>
 <body>
-
+  <h1>GSAP Monsters</h1>
+  <div id='container'>
+    <div class='monster'>TweenMax</div>
+    <div class='monster'>Draggable</div>
+    <div class='monster'>SplitText</div>
+    <div class='monster'>ThrowProps</div>
+    <div class='monster'>DrawSVG</div>
+    <div class='monster'>Physics2D</div>
+  </div>
 </body>
 </html>
