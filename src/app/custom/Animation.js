@@ -19,7 +19,7 @@ export default class Animation {
         otherMonsters.filter((monsterElement) => monsterElement !== monster).forEach((monster) => monster.contract());
       });
 
-      document.getElementById('container').addEventListener('mouseout', () => { monster.reset(); });
+      document.getElementById('container').addEventListener('mouseleave', () => { monster.reset(); });
     });
   }
 }
